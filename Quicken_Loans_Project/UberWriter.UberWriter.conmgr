@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="UberWriter UberWriter"
+  DTS:DTSID="{34401189-B3D9-4134-A590-DAEA7021F388}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::_100362204553000UberWriterUberWriter1_ConnectionString]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=UberWriter;Initial Catalog=UberWriter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA16wuJtn2KEKjzCLRt97syAAAAAACAAAAAAAQZgAAAAEAACAAAABiDSpjEuSbzzXb9NrRMCLMEVCEjF/piLGSbE7xVBdYlQAAAAAOgAAAAAIAACAAAABc16Db6SBapj/zaEXM6Haj55MIG6560RXZQAi5a/RENIAAAAArYOhP33DuSgwChsY3v+zmYKc+BwHy5N0VuuShwD3SuwugSBx9xQH1jAv7rMrRuuohomf87VRgh/oC9WBQ6srj99KQCal+NUOQC0f1cOKBuhjoO3VsaEEJBZNIbscSIbb6Rv+kfkJxVqH4S+/yt2V5s0nWep/sKw9d31rzpJ/VYEAAAAANGgtEJGSJb2eEWElRs/h67gg6vd59x7XZfPTy93litTuJbS3mEyIHbeEl4BdCdd8pzbf0xsboRfSZtZ6Dboc1</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="QuickenLoan_SF"
+  DTS:DTSID="{C9B507BB-B3BF-4DA2-9DC8-199A4D7FF23A}"
+  DTS:CreationName="Salesforce">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::SalesforceConnectionManager_ConnectionString]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <SalesforceConnectionManager
+      ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;RedirectUri=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True">
+      <Password
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANIYGUnLnC0Cz7/b+yaT8uAAAAAACAAAAAAAQZgAAAAEAACAAAADxX22v5zjEcrpJGKBh3Uzv+tWgF0CR46gspkTl5Jp9SgAAAAAOgAAAAAIAACAAAAAh0V+vImHFFtQ+OoLgdgCOZD2Gs9hfUm38bmldrkgvDWAAAAAjR5E5xZeZI3ldOVH+XOHX+JKmkkByrRhixZNpthoCSr6xJm/iSqoglBW8ZZt08LrJvXYWrSvhH/q01A/SIcIP+ywZjFUyz6oN7oNPmDYSMNuPBTFSLKpSttx2RRJbfZxAAAAA2Sm4SpXFUilPeoAJ6KQN5ItmiKJoEFEZCPFQpVHnvIE3cVcbQTfE60o0jiZN4OTUOhkP1OC6gb6zbnP1LkaDVw==</Password>
+      <SecurityToken
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANIYGUnLnC0Cz7/b+yaT8uAAAAAACAAAAAAAQZgAAAAEAACAAAABcc26DMc8LgE++fRe+owA3CHVkOhF4imMXbWaeUqHyCgAAAAAOgAAAAAIAACAAAAD5iK5qmiLbhJT2NhbNzK+k4bEZZuz0s+VRkloTThjUBXAAAABjyETIe2dJ4S/hDseoVlJrjmSYLnh+ijOESlRqzbjnRdmTLCDrxErA8k2/pmYH6g5IdJup8sqGlpCvVO4ZYYOIfi2YZTgDBNox31wCwi1fqDl/Jw02nvoKHDJX5008/U26r2j+Fl7dbqYulTMP6n3zQAAAAETFtyv6vWvGf+KkaXoAW312ZJugaNfDQ+PkxYRZHqHbZA92GOu0a+hxZe+AxIQF1uPUxYSYcNnpIbj0OGPJtGM=</SecurityToken>
+    </SalesforceConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/18/2020 7:27:09 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-75JHIV1"
+  DTS:CreatorName="DESKTOP-75JHIV1\Teddy"
+  DTS:DTSID="{277770AB-EE04-42E0-9B32-10C5EEAA24FC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Pkg_Quicken_Loans _Master"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{ED37C9DE-8A44-4D59-B133-D18E2D7F438E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\SC Pkg_Quicken Loans Master"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{9A25BF9D-8612-4A90-AE25-EB0FA892885B}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SC Pkg_Quicken Loans Master">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\SC Pkg_Quicken Loans Master\Pkg_LendingPad(FTP JSON)"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{BD9BCB11-BBEF-45F1-A2A2-C28682B27360}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Pkg_LendingPad(FTP JSON)"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Pkg_ LendingPad.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SC Pkg_Quicken Loans Master\Pkg_LendingQB(Sharepoint)"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{5C3D6E19-6E26-45C0-983C-8CF12B345D5B}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Pkg_LendingQB(Sharepoint)"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Pkg_LendingQB.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SC Pkg_Quicken Loans Master\Pkg_QuickenLoan(Salesforce)"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{03F3AAD2-A2A8-4E55-97B8-8FE8C42CB281}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Pkg_QuickenLoan(Salesforce)"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Pkg_QuickenLoan.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SC Pkg_Quicken Loans Master\Pkg_SimpleNexus(FTP BAK)"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{2B192FE1-11D6-488A-8769-7DBCA673EB53}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Pkg_SimpleNexus(FTP BAK)"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Pkg_ SimpeNexus.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SC Pkg_Quicken Loans Master\Pkg_UberWriter(Azure SQL Server)"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{11B90D31-284F-4172-8AC4-800E53231C3D}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Pkg_UberWriter(Azure SQL Server)"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <UseProjectReference>True</UseProjectReference>
+              <PackageName>Pkg_UberWriter.dtsx</PackageName>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{F75C4DC3-D719-48F9-8E43-FDB52D64C3DE}"
+          DTS:From="Package\SC Pkg_Quicken Loans Master\Pkg_LendingQB(Sharepoint)"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\SC Pkg_Quicken Loans Master\Pkg_QuickenLoan(Salesforce)" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{6EB302D1-B62F-4C6F-98DB-88CE680302A7}"
+          DTS:From="Package\SC Pkg_Quicken Loans Master\Pkg_QuickenLoan(Salesforce)"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\SC Pkg_Quicken Loans Master\Pkg_UberWriter(Azure SQL Server)" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{2CE8773C-84AC-47F0-B16B-948BB3289994}"
+          DTS:From="Package\SC Pkg_Quicken Loans Master\Pkg_UberWriter(Azure SQL Server)"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\SC Pkg_Quicken Loans Master\Pkg_LendingPad(FTP JSON)" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{321A9466-4E5A-4543-85CA-A2C0900C025A}"
+          DTS:From="Package\SC Pkg_Quicken Loans Master\Pkg_LendingPad(FTP JSON)"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\SC Pkg_Quicken Loans Master\Pkg_SimpleNexus(FTP BAK)" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\SC Pkg_Quicken Loans Master\Pkg_LendingPad(FTP JSON)"
+          TopLeft="83.5428609770171,250.211769090144" />
+        <NodeLayout
+          Size="211.2,41.6"
+          Id="Package\SC Pkg_Quicken Loans Master\Pkg_LendingQB(Sharepoint)"
+          TopLeft="79.5428609088977,6.72941273421979" />
+        <NodeLayout
+          Size="217.6,41.6"
+          Id="Package\SC Pkg_Quicken Loans Master\Pkg_QuickenLoan(Salesforce)"
+          TopLeft="83.5428609770172,84.4235314709093" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\SC Pkg_Quicken Loans Master\Pkg_SimpleNexus(FTP BAK)"
+          TopLeft="86.4000038828169,335.105887826834" />
+        <NodeLayout
+          Size="243.2,41.6"
+          Id="Package\SC Pkg_Quicken Loans Master\Pkg_UberWriter(Azure SQL Server)"
+          TopLeft="66.4000035422189,167.623532637758" />
+        <EdgeLayout
+          Id="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint]"
+          TopLeft="188.742860942957,48.3294127342198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.0941187366895"
+              Start="0,0"
+              End="0,28.5941187366895">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5941187366895" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 1]"
+          TopLeft="190.171432259618,126.023531470909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.6000011668485"
+              Start="0,0"
+              End="0,34.1000011668485">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.1000011668485" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 2]"
+          TopLeft="188.171432259618,209.223532637758">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.9882364523865"
+              Start="0,0"
+              End="0,33.4882364523865">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.4882364523865" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SC Pkg_Quicken Loans Master.PrecedenceConstraints[Constraint 3]"
+          TopLeft="189.771432429917,291.811769090144">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.2941187366894"
+              Start="0,0"
+              End="0,35.7941187366894">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.7941187366894" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43.2"
+          IsExpanded="True"
+          PanelSize="392.8,432"
+          Size="392.8,475.2"
+          Id="Package\SC Pkg_Quicken Loans Master"
+          TopLeft="145.142859614626,63.0117655895985" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
